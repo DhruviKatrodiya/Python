@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Aug  6 18:40:49 2022
+
+@author: HP
+"""
+
+List1 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
+
+for i in range(0, len(List1), 1):
+
+    if List1[i]<=150:
+    
+        if List1[i]%5==0:
+    
+            print(List1[i])
+
