@@ -6,14 +6,17 @@ Created on Sat Aug  6 08:16:59 2022
 """
 
 #Assignment Question 1
-num1=int(input("Enter the Number 1 :"))
-num2=int(input("Enter the Number 2 :"))
-product=num1*num2
-res=(num1+num2)
-if product > 1000 :
-   print(res)
+def multiplication_or_sum(num1, num2):
+    product = num1 * num2
+    if num1*num2 <= 1000:
+        return num1*num2
+    else:
+        return num1+num2 
 
-else :
-    print(product)
+result = multiplication_or_sum(20,30)
+print("The result is = ", result)
+
+result = multiplication_or_sum(50,10)
+print("The result is = ", result)
 
 
