@@ -6,8 +6,11 @@ Created on Sat Aug  6 09:13:04 2022
 """
 
 
-row=int(input("enter the number"))
-for i in range(row):
-    for j in range(i+1):
-        print(j+1, end=" ")
-    print("\r")
+import collections
+
+a_list = ["a", "b", "a", "a"]
+occurrences = collections.Counter(a_list)
+print(occurrences)
+
+o/p:-
+    Counter({'a': 3, 'b': 1})
